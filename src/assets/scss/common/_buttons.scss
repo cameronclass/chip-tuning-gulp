@@ -5,9 +5,16 @@
         background-color: $dark-blue;
         color: white;
 
-        &-red{
+        &-red {
             background-color: $red;
             color: white;
+
+            &:focus {
+                background-color: $red;
+                color: white;
+                border: 1px solid $red;
+            }
         }
     }
+
 }

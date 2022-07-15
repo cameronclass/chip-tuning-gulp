@@ -95,3 +95,31 @@ new Swiper(".videos__slider", {
     },
   },
 });
+
+/* Add More */
+const addMore = document.querySelectorAll(".js-btn-addmore");
+addMore.forEach((item) => {
+  item.onclick = function () {
+    this.nextElementSibling.classList.toggle("active");
+  };
+});
+
+const tabs = document.querySelector(".wrapper");
+const tabButton = document.querySelectorAll(".tab-button");
+const contents = document.querySelectorAll(".content");
+
+tabs.onclick = (e) => {
+  const id = e.target.dataset.id;
+  if (id) {
+    tabButton.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+    e.target.classList.add("active");
+
+    contents.forEach((content) => {
+      content.classList.remove("active");
+    });
+    const element = document.getElementById(id);
+    element.classList.add("active");
+  }
+};

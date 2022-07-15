@@ -5,10 +5,10 @@
 
 /* Template */
 @import "common/fonts";
+@import "template";
 @import "common/preloader";
 @import "common/buttons";
-@import "common/form";
-@import "template";
+@import "common/icons";
 @import "classes";
 
 /* Sections for all pages */
@@ -20,6 +20,3 @@
 
 /* Sliders */
 @import "common/sliders";
-
-/* Aos */
-//@import "libs/aos";

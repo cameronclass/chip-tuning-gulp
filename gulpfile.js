@@ -37,7 +37,7 @@ const path = {
     css: srcPath + "assets/scss/*.scss",
     images:
       srcPath +
-      "assets/images/**/*.{jpg,png,gif,ico,webp,webmanifest,xml,json}",
+      "assets/images/**/*.{jpg,jpeg,png,gif,ico,webp,webmanifest,xml,json}",
     svg: srcPath + "assets/images/**/**/*.svg",
     fonts: srcPath + "/assets/fonts/**/*.{eot,woff,woff2,ttf,svg}",
     txt: srcPath + "*.txt",

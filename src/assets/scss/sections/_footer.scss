@@ -1,0 +1,115 @@
+.footer {
+    background-color: black;
+    padding: 30px 0 0;
+
+    * {
+        color: white;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__logo {
+        width: 35%;
+
+        @include tablet {
+            width: 50%;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    &__menu {
+        width: 30%;
+
+        @include tablet {
+            width: 50%;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+
+        &_list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                width: 50%;
+
+                a {
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-bottom: 8px;
+                    display: inline-block;
+                    text-transform: capitalize;
+                    border-bottom: 2px solid transparent;
+
+                    &:hover {
+                        color: $red;
+                        border-bottom: 2px solid;
+                    }
+                }
+            }
+        }
+    }
+
+    &__links {
+        width: 25%;
+
+        @include tablet {
+            width: 50%;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+
+        &_list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            a {
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 10px;
+                display: inline-block;
+                text-transform: capitalize;
+
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        margin-top: 10px;
+
+        .bi {
+            margin-right: 8px;
+        }
+    }
+
+    &__bottom {
+        margin-top: 20px;
+        padding: 10px 0;
+        background-color: $dark-blue;
+
+        p {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
